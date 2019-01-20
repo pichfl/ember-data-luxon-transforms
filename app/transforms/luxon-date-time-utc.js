@@ -1,1 +1,3 @@
-export { default } from 'ember-luxon/transforms/luxon-date-time-utc';
+export {
+  default,
+} from "ember-data-luxon-transforms/transforms/luxon-date-time-utc";

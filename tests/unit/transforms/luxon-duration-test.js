@@ -1,9 +1,12 @@
-import { moduleFor, test } from 'ember-qunit';
+import { module, test } from 'qunit';
+import { setupTest } from 'ember-qunit';
 
-moduleFor('transform:luxon-duration', 'Unit | Transform | luxon duration', {});
+module('Unit | Transform | luxon duration', function(hooks) {
+  setupTest(hooks);
 
-// Replace this with your real tests.
-test('it exists', function(assert) {
-  let transform = this.subject();
-  assert.ok(transform);
+  // Replace this with your real tests.
+  test('it exists', function(assert) {
+    let transform = this.owner.lookup('transform:luxon-duration');
+    assert.ok(transform);
+  });
 });

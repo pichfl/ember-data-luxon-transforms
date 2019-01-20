@@ -1,1 +1,1 @@
-export { default } from 'ember-luxon/transforms/luxon-interval';
+export { default } from "ember-data-luxon-transforms/transforms/luxon-interval";

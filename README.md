@@ -2,6 +2,11 @@
 
 Ember Data transforms which use Luxon for Date and Time primitives based on [ember-luxon.](https://github.com/willrax/ember-luxon)
 
+## Compatibility
+
+- Ember.js v2.18 or above
+- Ember CLI v2.13 or above
+
 ## Installation
 
 ```
@@ -10,33 +15,16 @@ ember install ember-data-luxon-transforms
 
 ## Usage
 
-[Longer description of how to use the addon in apps.]
+```js
+import DS from "ember-data";
 
-## Contributing
-
-### Installation
-
-* `git clone <repository-url>`
-* `cd ember-data-luxon-transforms`
-* `yarn install`
-
-### Linting
-
-* `yarn lint:js`
-* `yarn lint:js --fix`
-
-### Running tests
-
-* `ember test` – Runs the test suite on the current Ember version
-* `ember test --server` – Runs the test suite in "watch mode"
-* `yarn test` – Runs `ember try:each` to test your addon against multiple Ember versions
-
-### Running the dummy application
-
-* `ember serve`
-* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+export default DS.Model.extend({
+  createdAt: DS.attr("luxon-date-time"),
+  updatedAt: DS.attr("luxon-date-time"),
+  duration: DS.attr("luxon-duration"),
+  next: DS.attr("luxon-interval"),
+});
+```
 
 ## License
 

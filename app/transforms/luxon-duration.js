@@ -1,1 +1,1 @@
-export { default } from 'ember-luxon/transforms/luxon-duration';
+export { default } from "ember-data-luxon-transforms/transforms/luxon-duration";
