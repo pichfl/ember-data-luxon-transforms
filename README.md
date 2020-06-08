@@ -1,6 +1,9 @@
 # ember-data-luxon-transforms
 
-Ember Data transforms which use Luxon for Date and Time primitives based on [ember-luxon.](https://github.com/willrax/ember-luxon)
+Ember Data transforms which use Luxon for Date and Time primitives based on
+[ember-luxon.](https://github.com/willrax/ember-luxon)
+
+**You probably do not want to use this in your project.**
 
 ## Compatibility
 
@@ -16,13 +19,13 @@ ember install ember-data-luxon-transforms
 ## Usage
 
 ```js
-import DS from "ember-data";
+import DS from 'ember-data';
 
 export default DS.Model.extend({
-  createdAt: DS.attr("luxon-date-time"),
-  updatedAt: DS.attr("luxon-date-time"),
-  duration: DS.attr("luxon-duration"),
-  next: DS.attr("luxon-interval"),
+  createdAt: DS.attr('luxon-date-time'),
+  updatedAt: DS.attr('luxon-date-time'),
+  duration: DS.attr('luxon-duration'),
+  next: DS.attr('luxon-interval'),
 });
 ```
 
